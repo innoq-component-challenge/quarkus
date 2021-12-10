@@ -1,0 +1,8 @@
+<button 
+  class="btn {components_Button:getCssClassFor(this.get('style'))} {this.get('additionalClasses')}" 
+  {this.get('additionalAttributes').or('').raw}
+  {#if this.get('name')}name="{name}"{/if}
+  {#if this.get('value')}value="{value}"{/if}
+  >
+  {nested-content}
+</button>
